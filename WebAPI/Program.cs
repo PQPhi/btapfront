@@ -51,13 +51,25 @@ app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "School Management API v1");
-    c.RoutePrefix = string.Empty; // Swagger UI at root
+    c.RoutePrefix = "swagger"; // Swagger UI at /swagger
 });
+
+// Enable static files
+app.UseStaticFiles();
+
+// Add CORS for frontend
+app.UseCors(builder => builder
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Map root to index.html
+app.MapFallbackToFile("index.html");
 
 app.Run();

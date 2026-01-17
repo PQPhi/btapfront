@@ -41,3 +41,5 @@ D:\Git\btapfront\WebAPI\obj\Debug\net8.0\refint\WebAPI.dll
 D:\Git\btapfront\WebAPI\obj\Debug\net8.0\WebAPI.pdb
 D:\Git\btapfront\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 D:\Git\btapfront\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll
+D:\Git\btapfront\WebAPI\bin\Debug\net8.0\WebAPI.staticwebassets.runtime.json
+D:\Git\btapfront\WebAPI\obj\Debug\net8.0\WebAPI.sourcelink.json
