@@ -1,0 +1,11 @@
+D:\Git\btapfront\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Git\btapfront\Domain\bin\Debug\net8.0\Domain.dll
+D:\Git\btapfront\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Git\btapfront\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\btapfront\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Git\btapfront\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Git\btapfront\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Git\btapfront\Domain\obj\Debug\net8.0\Domain.dll
+D:\Git\btapfront\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Git\btapfront\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Git\btapfront\Domain\obj\Debug\net8.0\ref\Domain.dll

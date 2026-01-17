@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "school-api-collection",
+		"name": "School Management API - Layered Architecture",
+		"description": "Collection để test API quản lý lớp học và sinh viên với In-Memory Database",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Classes",
+			"item": [
+				{
+					"name": "Get All Classes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/classes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"classes"
+							]
+						},
+						"description": "Lấy danh sách tất cả các lớp học"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Class By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/classes/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"classes",
+								"1"
+							]
+						},
+						"description": "Lấy thông tin chi tiết của một lớp theo Id"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Class",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Lớp 10A3\",\n  \"description\": \"Lớp 10 chuyên Hóa\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/classes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"classes"
+							]
+						},
+						"description": "Tạo mới một lớp học"
+					},
+					"response": []
+				}
+			],
+			"description": "Các API liên quan đến quản lý lớp học"
+		},
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "Get All Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/students",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"students"
+							]
+						},
+						"description": "Lấy danh sách tất cả sinh viên"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Student By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/students/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"students",
+								"1"
+							]
+						},
+						"description": "Lấy thông tin chi tiết của một sinh viên theo Id"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"fullName\": \"Phạm Thị D\",\n  \"email\": \"ptd@example.com\",\n  \"dateOfBirth\": \"2008-07-25T00:00:00\",\n  \"classId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/students",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"students"
+							]
+						},
+						"description": "Thêm mới một sinh viên"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Student",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 1,\n  \"fullName\": \"Nguyễn Văn A - Updated\",\n  \"email\": \"nva.updated@example.com\",\n  \"dateOfBirth\": \"2008-05-15T00:00:00\",\n  \"classId\": 2\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/students/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"students",
+								"1"
+							]
+						},
+						"description": "Cập nhật thông tin sinh viên"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Student",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/students/3",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"students",
+								"3"
+							]
+						},
+						"description": "Xóa sinh viên theo Id"
+					},
+					"response": []
+				}
+			],
+			"description": "Các API liên quan đến quản lý sinh viên"
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5000",
+			"type": "string"
+		}
+	]
+}
